@@ -1,0 +1,69 @@
+.navbar {
+    position: absolute;
+    height: 100vh;
+    width: 8.5%;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: var(--moduleColor);
+    color: var(--fontColor);
+    box-shadow: 5px 0px 7px rgba(15, 15, 16, 0.3);
+}
+
+.logoTwo {
+    color: var(--notVerified);
+}
+
+.logo {
+    margin: 2em 0;
+}
+
+.profile {
+    margin-bottom: 6em;
+    align-items: center;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: -0.5em;
+    cursor: default;
+}
+
+.profilePic {
+    position: relative;
+    width: 30%;
+    border: 3px solid var(--fontColor);
+    border-radius: 50%;
+}
+
+.navigate {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 3em;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navigate > h4:hover {
+    color: var(--backgroundColor);
+}
+
+.verify::after {
+    content: '';
+    position: relative;
+    left: -0.1em;
+    bottom: 0.2em;
+    height: 0.7em;
+    width: 0.7em;
+    background-color: var(--notVerified);
+    display: inline-block;
+    border-radius: 50%;
+    visibility: visible;
+}
+
+.logout {
+    width: 20%;
+    margin-top: 15em;
+    position: relative;
+    left: 3.5em;
+}

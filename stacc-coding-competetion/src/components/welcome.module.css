@@ -1,0 +1,16 @@
+.welcome {
+    color: var(--fontColor);
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    visibility: visible;
+}
+
+.logoTwo {
+    color: var(--notVerified);
+}
+
+.logo {
+    font-size: 40px;
+}
