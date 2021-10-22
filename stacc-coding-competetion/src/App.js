@@ -11,7 +11,7 @@ function App() {
 
     function Load() {
         useEffect(() => {
-            fetch('https://api.example.com/items')
+            fetch('placeholder')
                 .then((res) => res.json())
                 .then(
                     (result) => {
@@ -28,8 +28,6 @@ function App() {
     return (
         <div className='App'>
             <Navbar></Navbar>
-            <Dashboard></Dashboard>
-            <Welcome></Welcome>
         </div>
     );
 }

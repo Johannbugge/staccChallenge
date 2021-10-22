@@ -1,0 +1,54 @@
+.moduleControl {
+    position: relative;
+    top: 7em;
+    left: 15%;
+    width: 75%;
+    text-align: left;
+    color: var(--fontColor);
+}
+
+.moduleFormatting {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.moduleVerify {
+    position: relative;
+    background-color: var(--moduleColor);
+    width: 30%;
+    height: 20em;
+    text-align: left;
+    border-radius: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.applicantTrend {
+    position: relative;
+    background-color: var(--moduleColor);
+    width: 96%;
+    height: 20em;
+    text-align: left;
+    border-radius: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.modulePreviouslyVerified {
+    position: relative;
+    background-color: var(--moduleColor);
+    width: 65%;
+    height: 20em;
+    text-align: left;
+    border-radius: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.moduleName {
+    position: relative;
+    left: 1.5em;
+    top: 0em;
+}

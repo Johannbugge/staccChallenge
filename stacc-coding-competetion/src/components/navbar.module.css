@@ -8,6 +8,7 @@
     background-color: var(--moduleColor);
     color: var(--fontColor);
     box-shadow: 5px 0px 7px rgba(15, 15, 16, 0.3);
+    user-select: none;
 }
 
 .logoTwo {
@@ -31,9 +32,13 @@
 
 .profilePic {
     position: relative;
-    width: 30%;
+    width: 35%;
     border: 3px solid var(--fontColor);
     border-radius: 50%;
+}
+
+.profilePic:hover {
+    border: 3px solid var(--notVerified);
 }
 
 .navigate {
@@ -51,8 +56,8 @@
 .verify::after {
     content: '';
     position: relative;
-    left: -0.1em;
-    bottom: 0.2em;
+    left: 5em;
+    bottom: 0em;
     height: 0.7em;
     width: 0.7em;
     background-color: var(--notVerified);

@@ -1,8 +1,14 @@
 import s from './navbar.module.css';
 import profile from '../assets/PlaceholderProfile.png';
 import logout from '../assets/logout.png';
+import Welcome from './welcome';
+import Dashboard from './dashboard';
+import { useState } from 'react';
 
 function Navbar(props) {
+    const [display, setDisplay] = useState(false);
+    const show = () => setDisplay(true);
+    const hide = () => setDisplay(false);
     return (
         <div>
             <nav className={s.navbar}>
@@ -18,11 +24,8 @@ function Navbar(props) {
                 </div>
                 <div className={s.navigate}>
                     <h6 className={s.title}>Main</h6>
-                    <h4>Hjem</h4>
-                    <h4
-                        onClick={props.handleVisibleWelcome}
-                        className={s.verify}
-                    >
+                    <h4 onClick={show}>Hjem</h4>
+                    <h4 onClick={hide} className={s.verify}>
                         Verifiser
                     </h4>
                     <h4>Innboks</h4>
@@ -35,6 +38,8 @@ function Navbar(props) {
                     <img className={s.logout} alt='' src={logout}></img>
                 </div>
             </nav>
+            {display ? <Welcome /> : null}
+            {display ? null : <Dashboard />}
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import react from 'react';
 import s from './welcome.module.css';
 
-function Welcome() {
+function Welcome(props) {
     return (
         <div className={s.welcome}>
             <h1>Velkommen til</h1>
@@ -14,7 +14,7 @@ function Welcome() {
                 navigasjonsbaren til venstre.
             </h3>
             <h3>
-                Om det trengs verifisering av en kunde, vil du observere et rødt
+                Om det behøvs verifisering av en kunde vil du observere et rødt
                 icon ved "Verifiser"-knappen.
             </h3>
         </div>
