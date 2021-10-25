@@ -1,18 +1,22 @@
 import s from './dashboard.module.css';
 import graph from '../assets/Graph.png';
-import Kunde from './kunde';
+import KundeListe from './kundeliste';
 import FillerInfo from './fillerInfo';
 import Verifiser from './verifiser';
+import ApplicantTrend from './applicanttrend';
+import { useState } from 'react';
 
 function Dashboard() {
+    const [modal, setModal] = useState(null);
+
     return (
         <div className={s.moduleControl}>
+            {modal}
             <h3>Dashboard</h3>
-            <Verifiser></Verifiser>
             <div className={s.moduleFormatting}>
                 <div className={s.moduleVerify}>
                     <h4 className={s.moduleName}>Verifiseringer</h4>
-                    <Kunde></Kunde>
+                    <KundeListe loadModal={setModal}></KundeListe>
                 </div>
                 <div className={s.modulePreviouslyVerified}>
                     <h4 className={s.moduleName}>Informasjon</h4>
@@ -20,6 +24,7 @@ function Dashboard() {
                 </div>
                 <div className={s.applicantTrend}>
                     <h4 className={s.moduleName}>Søknadstrend</h4>
+                    <ApplicantTrend></ApplicantTrend>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@
     height: 10em;
     width: 10em;
     border-radius: 50%;
-    border: 4em solid var(--verified);
+    border: 4.5em solid var(--verified);
     box-sizing: border-box;
     border-left-color: lightgrey;
     transform: rotate(45deg);
@@ -32,7 +32,7 @@
     height: 10em;
     width: 10em;
     border-radius: 50%;
-    border: 4em solid var(--notVerified);
+    border: 4.5em solid var(--notVerified);
     box-sizing: border-box;
     border-left-color: lightgrey;
     border-bottom-color: lightgrey;

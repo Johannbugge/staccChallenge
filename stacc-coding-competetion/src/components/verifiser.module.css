@@ -1,11 +1,11 @@
 .scheme {
     background-color: var(--fontColor);
     width: 50%;
-    height: 115%;
+    height: 122%;
     position: absolute;
     z-index: 2;
     left: 22.5%;
-    top: -10%;
+    top: -12%;
     color: rgb(22, 22, 22);
 }
 
@@ -18,7 +18,7 @@
 
 .inputControl {
     width: 100%;
-    height: 8em;
+    height: 7em;
     color: grey;
     margin-bottom: 2em;
     background-color: var(--fontColor);
@@ -27,8 +27,6 @@
 
 .photo {
     width: 50%;
-    border: 1px solid var(--backgroundColor);
-    border-radius: 0;
 }
 
 .checkButton {
@@ -61,4 +59,17 @@
     left: 95%;
     top: 1%;
     text-align: center;
+}
+
+.doCheck {
+    display: flex;
+}
+
+.checkButton {
+    margin-right: 2em;
+}
+
+.schemeLayout > h4 {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 1em;
 }
