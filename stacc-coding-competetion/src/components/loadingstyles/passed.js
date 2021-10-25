@@ -5,7 +5,9 @@ function Passed() {
         <div>
             <div className={s.loading}>
                 <div className={s.spinner}></div>
-                <p>Denne personen er politisk eksponert</p>
+                <p className={s.settings}>
+                    Denne personen er politisk eksponert
+                </p>
             </div>
         </div>
     );

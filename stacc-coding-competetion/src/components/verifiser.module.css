@@ -46,11 +46,11 @@
     height: 2em;
 }
 
-.approved {
-    background-color: var(--verified);
+.approve {
+    background-color: #329168;
 }
 
-.declined {
+.deny {
     background-color: var(--notVerified);
 }
 
