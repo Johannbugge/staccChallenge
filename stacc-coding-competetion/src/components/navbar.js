@@ -1,6 +1,6 @@
 import s from './navbar.module.css';
 import profile from '../assets/PlaceholderProfile.png';
-import logout from '../assets/Logout.png';
+import logout from '../assets/logout.png';
 import Welcome from './welcome';
 import Dashboard from './dashboard';
 import { useState } from 'react';
