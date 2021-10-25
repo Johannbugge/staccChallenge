@@ -50,13 +50,13 @@
 }
 
 .navigate > h4:hover {
-    color: var(--backgroundColor);
+    color: var(--secondaryAccent);
 }
 
 .verify::after {
     content: '';
     position: relative;
-    left: 5em;
+    left: 40%;
     bottom: 0em;
     height: 0.7em;
     width: 0.7em;
@@ -68,7 +68,14 @@
 
 .logout {
     width: 20%;
-    margin-top: 15em;
+    padding: 2em;
+    margin-top: 12.5em;
     position: relative;
-    left: 3.5em;
+    left: 1.5em;
+    transition: left 200ms ease-in-out;
+}
+
+.logout:hover {
+    left: 0.5em;
+    transition: left 200ms ease-in-out;
 }

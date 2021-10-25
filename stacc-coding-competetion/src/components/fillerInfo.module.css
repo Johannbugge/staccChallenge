@@ -1,0 +1,42 @@
+.formatter {
+    display: flex;
+    position: relative;
+    left: 22.5%;
+    top: -1em;
+    justify-content: space-between;
+    width: 50%;
+    align-items: left;
+    text-align: center;
+    font-size: 14px;
+}
+
+.granted {
+    position: relative;
+    content: '';
+    display: block;
+    background-color: none;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border: 4em solid var(--verified);
+    box-sizing: border-box;
+    border-left-color: lightgrey;
+    transform: rotate(45deg);
+}
+
+.denied {
+    position: relative;
+    content: '';
+    display: block;
+    background-color: none;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border: 4em solid var(--notVerified);
+    box-sizing: border-box;
+    border-left-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-right-color: lightgrey;
+
+    transform: rotate(45deg);
+}

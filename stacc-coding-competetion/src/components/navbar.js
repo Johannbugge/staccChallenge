@@ -1,6 +1,6 @@
 import s from './navbar.module.css';
 import profile from '../assets/PlaceholderProfile.png';
-import logout from '../assets/logout.png';
+import logout from '../assets/Logout.png';
 import Welcome from './welcome';
 import Dashboard from './dashboard';
 import { useState } from 'react';
@@ -24,8 +24,8 @@ function Navbar(props) {
                 </div>
                 <div className={s.navigate}>
                     <h6 className={s.title}>Main</h6>
-                    <h4 onClick={show}>Hjem</h4>
-                    <h4 onClick={hide} className={s.verify}>
+                    <h4 onClick={hide}>Hjem</h4>
+                    <h4 onClick={show} className={s.verify}>
                         Verifiser
                     </h4>
                     <h4>Innboks</h4>
@@ -35,11 +35,11 @@ function Navbar(props) {
                     <h4>Kalender</h4>
                     <h4>Informasjon</h4>
                     <h4>Hjelp</h4>
-                    <img className={s.logout} alt='' src={logout}></img>
+                    <img className={s.logout} alt='Logout' src={logout}></img>
                 </div>
             </nav>
-            {display ? <Welcome /> : null}
-            {display ? null : <Dashboard />}
+            {display ? null : <Welcome />}
+            {display ? <Dashboard /> : null}
         </div>
     );
 }

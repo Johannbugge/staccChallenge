@@ -1,7 +1,7 @@
 .moduleControl {
     position: relative;
     top: 7em;
-    left: 15%;
+    left: 18%;
     width: 75%;
     text-align: left;
     color: var(--fontColor);
@@ -17,7 +17,7 @@
 .moduleVerify {
     position: relative;
     background-color: var(--moduleColor);
-    width: 30%;
+    width: 40%;
     height: 20em;
     text-align: left;
     border-radius: 1em;
@@ -39,7 +39,7 @@
 .modulePreviouslyVerified {
     position: relative;
     background-color: var(--moduleColor);
-    width: 65%;
+    width: 55%;
     height: 20em;
     text-align: left;
     border-radius: 1em;
