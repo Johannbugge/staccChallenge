@@ -25,7 +25,12 @@ function Navbar(props) {
                 <div className={s.navigate}>
                     <h6 className={s.title}>Main</h6>
                     <h4 onClick={hide}>Hjem</h4>
-                    <h4 onClick={show} className={s.verify}>
+                    <h4
+                        onClick={show}
+                        className={`${s.verify} ${
+                            props.Kunder.length > 0 ? s.noti : null
+                        }`}
+                    >
                         Verifiser
                     </h4>
                     <h4>Innboks</h4>
@@ -39,7 +44,14 @@ function Navbar(props) {
                 </div>
             </nav>
             {display ? null : <Welcome />}
-            {display ? <Dashboard /> : null}
+            {display ? (
+                <Dashboard
+                    setKundeId={props.setKundeId}
+                    kid={props.kid}
+                    setKunder={props.setKunder}
+                    Kunder={props.Kunder}
+                />
+            ) : null}
         </div>
     );
 }

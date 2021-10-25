@@ -6,7 +6,7 @@ import Verifiser from './verifiser';
 import ApplicantTrend from './applicanttrend';
 import { useState } from 'react';
 
-function Dashboard() {
+function Dashboard(props) {
     const [modal, setModal] = useState(null);
 
     return (
@@ -16,7 +16,13 @@ function Dashboard() {
             <div className={s.moduleFormatting}>
                 <div className={s.moduleVerify}>
                     <h4 className={s.moduleName}>Verifiseringer</h4>
-                    <KundeListe loadModal={setModal}></KundeListe>
+                    <KundeListe
+                        kid={props.kid}
+                        setKundeId={props.setKundeId}
+                        setKunder={props.setKunder}
+                        Kunder={props.Kunder}
+                        loadModal={setModal}
+                    ></KundeListe>
                 </div>
                 <div className={s.modulePreviouslyVerified}>
                     <h4 className={s.moduleName}>Informasjon</h4>
